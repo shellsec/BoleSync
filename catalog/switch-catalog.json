@@ -1,0 +1,4454 @@
+{
+  "schema": 1,
+  "apps": [
+    {
+      "id": "atmosphere-stable",
+      "name": "大气层",
+      "aliases": [
+        "大气层",
+        "Atmosphere"
+      ],
+      "summary": "获取配好组件的 Atmosphere 整合包",
+      "category": "系统基础",
+      "instructions": "整合包与官方 Atmosphere 本体是不同选择；保留整合包原目录结构。",
+      "repo": "rumla3434/Atmosphere-stable",
+      "page": "https://github.com/rumla3434/Atmosphere-stable/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".7z"
+      ],
+      "markers": [
+        ".7z"
+      ],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "manual_deployment"
+      }
+    },
+    {
+      "id": "nx-firmware",
+      "name": "固件",
+      "aliases": [
+        "固件",
+        "NX_Firmware",
+        "离线固件",
+        "系统固件"
+      ],
+      "summary": "下载 Switch 系统离线更新包",
+      "category": "系统基础",
+      "instructions": "仅提供离线固件下载；刷写与下载分开，兼容性查看发布说明。",
+      "repo": "rumla3434/NX_Firmware",
+      "page": "https://github.com/rumla3434/NX_Firmware/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".rar"
+      ],
+      "markers": [
+        ".rar"
+      ],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "manual_deployment"
+      }
+    },
+    {
+      "id": "atmosphere",
+      "name": "Atmosphere",
+      "aliases": [
+        "Atmosphere",
+        "大气层本体",
+        "AMS"
+      ],
+      "summary": "运行 Switch 自制应用和系统模块",
+      "category": "系统基础",
+      "instructions": "压缩包不含单独发布的 fusee.bin；使用 fusee 启动时需从同一发布页另取对应载荷。Daybreak 随 Atmosphere 提供。",
+      "repo": "Atmosphere-NX/Atmosphere",
+      "page": "https://github.com/Atmosphere-NX/Atmosphere/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "atmosphere",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "hekate",
+      "name": "hekate",
+      "aliases": [
+        "hekate",
+        "引导",
+        "虚拟系统",
+        "NAND备份"
+      ],
+      "summary": "选择启动环境、备份 NAND 和管理 emuMMC",
+      "category": "系统基础",
+      "instructions": "选择含 Nyx 的完整 ZIP；保留 bootloader 目录，备份和 emuMMC 操作需在设备端进行。",
+      "repo": "CTCaer/hekate",
+      "page": "https://github.com/CTCaer/hekate/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "hekate_ctcaer",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "nx-hbmenu",
+      "name": "nx-hbmenu",
+      "aliases": [
+        "nx-hbmenu",
+        "自制菜单",
+        "hbmenu"
+      ],
+      "summary": "浏览并启动 SD 卡上的自制应用",
+      "category": "系统基础",
+      "instructions": "Atmosphere 整合环境通常已包含 hbmenu，无需重复覆盖。",
+      "repo": "switchbrew/nx-hbmenu",
+      "page": "https://github.com/switchbrew/nx-hbmenu/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "nx-hbmenu",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "hekate-easyworld",
+      "name": "Hekate汉化",
+      "aliases": [
+        "Hekate汉化",
+        "简体中文",
+        "easyworld"
+      ],
+      "summary": "用中文操作 Hekate 启动菜单和 Nyx 工具",
+      "category": "系统基础",
+      "instructions": "默认下载简体中文 _sc.zip 完整包；繁体 _tc.zip 在同一发布页。汉化与官方原版是替代选择，使用前核对 Nyx/Hekate 版本。",
+      "repo": "easyworld/hekate",
+      "page": "https://github.com/easyworld/hekate/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "hekate_ctcaer_",
+        "_sc.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "hekate-zdm",
+      "name": "Hekate汉化",
+      "aliases": [
+        "Hekate汉化",
+        "nyx.bin",
+        "zdm"
+      ],
+      "summary": "给 Hekate 的 Nyx 界面换上 zdm 中文版",
+      "category": "系统基础",
+      "instructions": "独立 nyx.bin 汉化文件，手动放到 SD:/bootloader/sys/。本次 latest 标签为 v6.5.3-CN，不能据此认定兼容 Hekate 6.5.4。",
+      "repo": "zdm65477730/hekate",
+      "page": "https://github.com/zdm65477730/hekate/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "nyx.bin"
+      ],
+      "extensions": [
+        ".bin"
+      ],
+      "markers": [
+        "nyx.bin"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "manual_deployment"
+      }
+    },
+    {
+      "id": "sys-patch",
+      "name": "签名补丁",
+      "aliases": [
+        "签名补丁",
+        "系统补丁"
+      ],
+      "summary": "在系统运行时应用 sys-patch 支持的补丁",
+      "category": "系统基础",
+      "instructions": "系统模块套件；按压缩包实际目录部署。与 IPS 签名补丁是不同方案，兼容性查看对应发布说明。",
+      "repo": "impeeza/sys-patch",
+      "page": "https://github.com/impeeza/sys-patch/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "sys-patch-v",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "sigpatch-scripts",
+      "name": "签名补丁制作",
+      "aliases": [
+        "签名补丁制作",
+        "make_patches.py"
+      ],
+      "summary": "在电脑上生成签名补丁",
+      "category": "系统基础",
+      "instructions": "电脑端 Python 制作脚本入口，需自行准备运行环境；此条只打开脚本，不自动执行。",
+      "repo": "borntohonk/Switch-Ghidra-Guides",
+      "page": "https://github.com/borntohonk/Switch-Ghidra-Guides/blob/master/scripts/make_patches.py",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "sigpatch-downloads",
+      "name": "Sigpatch",
+      "aliases": [
+        "Sigpatch",
+        "签名补丁"
+      ],
+      "summary": "查找与系统版本匹配的签名补丁",
+      "category": "系统基础",
+      "instructions": "论坛附件手动下载；按帖内说明核对系统与 Atmosphere 版本。",
+      "repo": "",
+      "page": "https://gbatemp.net/threads/sigpatches-for-atmosphere-hekate-fss0-fusee-package3.571543/",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "jksv",
+      "name": "JKSV",
+      "aliases": [
+        "JKSV",
+        "存档备份",
+        "存档还原"
+      ],
+      "summary": "把游戏存档备份到 SD 卡，或从备份还原",
+      "category": "日常工具",
+      "instructions": "下载 JKSV.nro。建议在还原前先备份当前存档。",
+      "repo": "J-D-K/JKSV",
+      "page": "https://github.com/J-D-K/JKSV/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "JKSV.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "JKSV",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "JKSV.nro",
+        "target": "sdmc:/switch/JKSV/JKSV.nro"
+      }
+    },
+    {
+      "id": "sys-clk",
+      "name": "sys-clk",
+      "aliases": [
+        "sys-clk",
+        "超频",
+        "降频"
+      ],
+      "summary": "为不同游戏设置 CPU、GPU 和内存频率",
+      "category": "日常工具",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "retronx-team/sys-clk",
+      "page": "https://github.com/retronx-team/sys-clk/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "sys-clk",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "missioncontrol",
+      "name": "MissionControl",
+      "aliases": [
+        "MissionControl",
+        "蓝牙手柄",
+        "PS手柄",
+        "Xbox手柄"
+      ],
+      "summary": "连接第三方蓝牙手柄",
+      "category": "日常工具",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "ndeadly/MissionControl",
+      "page": "https://github.com/ndeadly/MissionControl/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "MissionControl",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "ftpd",
+      "name": "ftpd",
+      "aliases": [
+        "ftpd",
+        "FTP",
+        "无线传输"
+      ],
+      "summary": "用手机或电脑通过 FTP 读写 SD 卡文件",
+      "category": "日常工具",
+      "instructions": "在 Switch 上打开 FTP 服务，再用手机或电脑连接屏幕上显示的地址。",
+      "repo": "mtheall/ftpd",
+      "page": "https://github.com/mtheall/ftpd/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "ftpd.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "ftpd.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "ftpd.nro",
+        "target": "sdmc:/switch/ftpd/ftpd.nro"
+      }
+    },
+    {
+      "id": "tesla-menu",
+      "name": "Tesla-Menu",
+      "aliases": [
+        "Tesla-Menu",
+        "Tesla",
+        "特斯拉",
+        "悬浮菜单"
+      ],
+      "summary": "在游戏中打开悬浮菜单和插件",
+      "category": "日常工具",
+      "instructions": "原版 Tesla 菜单，配合 nx-ovlloader；与 Ultrahand 同属菜单方案，安装前按各项目说明选择。",
+      "repo": "WerWolv/Tesla-Menu",
+      "page": "https://github.com/WerWolv/Tesla-Menu/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "ovlmenu.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "ovlmenu",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "nx-ovlloader",
+      "name": "nx-ovlloader",
+      "aliases": [
+        "nx-ovlloader",
+        "悬浮加载器"
+      ],
+      "summary": "加载 Tesla 等悬浮菜单所需的插件",
+      "category": "日常工具",
+      "instructions": "悬浮插件加载器；菜单与插件的系统兼容性以对应项目说明为准。",
+      "repo": "WerWolv/nx-ovlloader",
+      "page": "https://github.com/WerWolv/nx-ovlloader/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "nx-ovlloader.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "nx-ovlloader",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "nx-shell",
+      "name": "NX-Shell",
+      "aliases": [
+        "NX-Shell",
+        "文件管理"
+      ],
+      "summary": "在 Switch 上浏览和整理 SD 卡文件",
+      "category": "日常工具",
+      "instructions": "下载独立 NRO。可以在 hbmenu 中打开。",
+      "repo": "joel16/NX-Shell",
+      "page": "https://github.com/joel16/NX-Shell/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "NX-Shell.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "NX-Shell",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "NX-Shell.nro",
+        "target": "sdmc:/switch/NX-Shell/NX-Shell.nro"
+      }
+    },
+    {
+      "id": "edizon",
+      "name": "EdiZon",
+      "aliases": [
+        "EdiZon",
+        "金手指",
+        "存档修改"
+      ],
+      "summary": "备份、还原或编辑游戏存档",
+      "category": "日常工具",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "WerWolv/EdiZon",
+      "page": "https://github.com/WerWolv/EdiZon/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "EdiZon.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "EdiZon",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "EdiZon.nro",
+        "target": "sdmc:/switch/EdiZon/EdiZon.nro"
+      }
+    },
+    {
+      "id": "homeguard",
+      "name": "HomeGuard",
+      "aliases": [
+        "HomeGuard",
+        "HOME键",
+        "防误触"
+      ],
+      "summary": "管理 HOME 菜单的保护设置",
+      "category": "日常工具",
+      "instructions": "预发布固定版本；先阅读 README 的启动与限制说明，后续版本需人工复核 tag。",
+      "repo": "Aster145/HomeGuard",
+      "page": "https://github.com/Aster145/HomeGuard/releases/tag/v0.1.1",
+      "url": "",
+      "tag": "v0.1.1",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "HomeGuard-0.1.1-icon.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "dbi",
+      "name": "DBI",
+      "aliases": [
+        "DBI",
+        "MTP",
+        "USB传输"
+      ],
+      "summary": "通过 USB 或 MTP 在电脑和 Switch 之间传文件",
+      "category": "日常工具",
+      "instructions": "此条目只下载 DBI.nro。需要配置文件或电脑端工具时，可从同一发布页获取。",
+      "repo": "rashevskyv/dbi",
+      "page": "https://github.com/rashevskyv/dbi/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "DBI.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "DBI.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "DBI.nro",
+        "target": "sdmc:/switch/DBI/DBI.nro"
+      }
+    },
+    {
+      "id": "hb-appstore",
+      "name": "自制商店",
+      "aliases": [
+        "自制商店",
+        "应用商店",
+        "HB商店"
+      ],
+      "summary": "在 Switch 上查找、下载和更新自制应用",
+      "category": "日常工具",
+      "instructions": "下载 switch-extracttosd.zip，包含完整资源；不下载 Wii U 文件。",
+      "repo": "fortheusers/hb-appstore",
+      "page": "https://github.com/fortheusers/hb-appstore/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "switch-extracttosd.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "switch-extracttosd.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "zip_nro",
+        "asset": "switch-extracttosd.zip",
+        "member": "switch/appstore/appstore.nro",
+        "target": "sdmc:/switch/appstore/appstore.nro",
+        "evidence": "https://github.com/fortheusers/hb-appstore/releases"
+      }
+    },
+    {
+      "id": "aio-switch-updater",
+      "name": "一体更新",
+      "aliases": [
+        "一体更新",
+        "更新工具"
+      ],
+      "summary": "下载自制系统、固件和相关更新包",
+      "category": "日常工具",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "HamletDuFromage/aio-switch-updater",
+      "page": "https://github.com/HamletDuFromage/aio-switch-updater/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "aio-switch-updater.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "aio-switch-updater.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "ultrahand-overlay",
+      "name": "Ultrahand",
+      "aliases": [
+        "Ultrahand",
+        "特斯拉菜单",
+        "悬浮菜单"
+      ],
+      "summary": "在游戏内打开悬浮工具和运行脚本",
+      "category": "日常工具",
+      "instructions": "选择 sdout.zip 完整 SD 布局包；依赖与放置方式见项目说明，勿只复制 ovlmenu.ovl 而漏掉资源。",
+      "repo": "ppkantorski/Ultrahand-Overlay",
+      "page": "https://github.com/ppkantorski/Ultrahand-Overlay/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "sdout.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "sdout.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "emuiibo",
+      "name": "amiibo",
+      "aliases": [
+        "amiibo",
+        "阿米宝"
+      ],
+      "summary": "用虚拟 amiibo 代替实体 amiibo",
+      "category": "日常工具",
+      "instructions": "ZIP 为 Switch 系统模块；桌面端 emuiigen.jar 不属于本条下载内容。",
+      "repo": "XorTroll/emuiibo",
+      "page": "https://github.com/XorTroll/emuiibo/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "emuiibo.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "emuiibo.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "sys-con",
+      "name": "有线手柄",
+      "aliases": [
+        "有线手柄",
+        "USB手柄"
+      ],
+      "summary": "用 USB 连接兼容的第三方手柄",
+      "category": "日常工具",
+      "instructions": "旧版 USB 手柄模块；使用前核对当前系统与 Atmosphere 兼容性，不代表支持所有手柄。",
+      "repo": "cathery/sys-con",
+      "page": "https://github.com/cathery/sys-con/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "sys-con-"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "fastcfwswitch",
+      "name": "重启",
+      "aliases": [
+        "重启",
+        "载荷切换"
+      ],
+      "summary": "从悬浮菜单选择载荷并重启",
+      "category": "日常工具",
+      "instructions": "悬浮插件，需要配置目标 payload 路径。",
+      "repo": "Hartie95/fastCFWswitch",
+      "page": "https://github.com/Hartie95/fastCFWswitch/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "fastCFWswitch_"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "awoo-installer",
+      "name": "游戏安装",
+      "aliases": [
+        "游戏安装",
+        "Awoo"
+      ],
+      "summary": "在 Switch 上使用 Awoo 安装工具",
+      "category": "日常工具",
+      "instructions": "主机端 ZIP；电脑端配套工具见 ns-usbloader，不将电脑程序复制为 NRO。",
+      "repo": "Huntereb/Awoo-Installer",
+      "page": "https://github.com/Huntereb/Awoo-Installer/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "Awoo-Installer.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "Awoo-Installer.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "ascent-toolbox",
+      "name": "深海工具箱",
+      "aliases": [
+        "深海工具箱",
+        "插件管理"
+      ],
+      "summary": "查看和切换系统模块",
+      "category": "日常工具",
+      "instructions": "Ascent Toolbox，与 DeepSea 分支分开收录；按对应项目确认设备和重启支持。",
+      "repo": "exploitz86/Ascent-Toolbox",
+      "page": "https://github.com/exploitz86/Ascent-Toolbox/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "Ascent-Toolbox.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "Ascent-Toolbox.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "Ascent-Toolbox.nro",
+        "target": "sdmc:/switch/Ascent-Toolbox/Ascent-Toolbox.nro"
+      }
+    },
+    {
+      "id": "deepsea-toolbox",
+      "name": "深海工具箱",
+      "aliases": [
+        "深海工具箱",
+        "插件管理"
+      ],
+      "summary": "管理 DeepSea 环境中的系统模块",
+      "category": "日常工具",
+      "instructions": "原 DeepSea 分支；实际发布文件名为 DeepSeaToolbox.nro，不与 Ascent 版本混写。",
+      "repo": "Team-Neptune/DeepSea-Toolbox",
+      "page": "https://github.com/Team-Neptune/DeepSea-Toolbox/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "DeepSeaToolbox.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "DeepSeaToolbox.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "DeepSeaToolbox.nro",
+        "target": "sdmc:/switch/DeepSeaToolbox/DeepSeaToolbox.nro"
+      }
+    },
+    {
+      "id": "edizon-se",
+      "name": "金手指",
+      "aliases": [
+        "金手指",
+        "Edizon.nro"
+      ],
+      "summary": "在游戏运行时查找和修改数值",
+      "category": "日常工具",
+      "instructions": "选择 edizon.zip 标准包；同页 EdiZon_alt.zip 是另一版本，使用差异以项目说明为准。",
+      "repo": "tomvita/EdiZon-SE",
+      "page": "https://github.com/tomvita/EdiZon-SE/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "edizon.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "edizon.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "linkalho",
+      "name": "账号关联",
+      "aliases": [
+        "账号关联"
+      ],
+      "summary": "管理主机上的本地账号关联",
+      "category": "日常工具",
+      "instructions": "离线账号关联工具；功能与当前系统支持范围查看项目说明。",
+      "repo": "impeeza/linkalho",
+      "page": "https://github.com/impeeza/linkalho/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "linkalho-v",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "nx-activity-log-zdm",
+      "name": "游玩时间",
+      "aliases": [
+        "游玩时间",
+        "游戏时长"
+      ],
+      "summary": "用中文查看各游戏的游玩时长",
+      "category": "日常工具",
+      "instructions": "游玩时间记录工具汉化分支；主机端 NRO。",
+      "repo": "zdm65477730/NX-Activity-Log",
+      "page": "https://github.com/zdm65477730/NX-Activity-Log/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "NX-Activity-Log.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "NX-Activity-Log.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "NX-Activity-Log.nro",
+        "target": "sdmc:/switch/NX-Activity-Log/NX-Activity-Log.nro"
+      }
+    },
+    {
+      "id": "sphaira",
+      "name": "hbmenu替代",
+      "aliases": [
+        "hbmenu替代",
+        "文件管理",
+        "前端"
+      ],
+      "summary": "在一个菜单里启动自制应用、浏览文件和找工具",
+      "category": "日常工具",
+      "instructions": "完整 ZIP；按 README 确认替换 hbmenu.nro 的方式与功能，保留所需资源。",
+      "repo": "ITotalJustice/sphaira",
+      "page": "https://github.com/ITotalJustice/sphaira/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "sphaira.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "sphaira.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "switch-time",
+      "name": "联网校时",
+      "aliases": [
+        "联网校时",
+        "校准时钟",
+        "switchtime"
+      ],
+      "summary": "联网校准 Switch 的系统时间",
+      "category": "日常工具",
+      "instructions": "下载校时 NRO。使用前请确认 Switch 已联网。",
+      "repo": "3096/switch-time",
+      "page": "https://github.com/3096/switch-time/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "switch-time.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "switch-time.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "switch-time.nro",
+        "target": "sdmc:/switch/switch-time/switch-time.nro"
+      }
+    },
+    {
+      "id": "tencent-switcher-gui",
+      "name": "国行",
+      "aliases": [
+        "国行",
+        "区域切换",
+        "腾讯"
+      ],
+      "summary": "在 Switch 上切换系统区域",
+      "category": "日常工具",
+      "instructions": "下载当前公开 Release。可切换的区域和使用条件以项目说明为准。",
+      "repo": "CaiMiao/Tencent-switcher-GUI",
+      "page": "https://github.com/CaiMiao/Tencent-switcher-GUI/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "tencent-switcher-gui.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "tencent-switcher-gui.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "tencent-switcher-gui.nro",
+        "target": "sdmc:/switch/tencent-switcher-gui/tencent-switcher-gui.nro"
+      }
+    },
+    {
+      "id": "tinwoo",
+      "name": "游戏安装",
+      "aliases": [
+        "游戏安装"
+      ],
+      "summary": "在 Switch 上使用 TinWoo 安装工具",
+      "category": "日常工具",
+      "instructions": "主机端完整 ZIP；使用方式与前端要求查看发布说明。",
+      "repo": "mrdude2478/Tinwoo-Release",
+      "page": "https://github.com/mrdude2478/Tinwoo-Release/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "Tinwoo-Installer.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "Tinwoo-Installer.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "wiliwili",
+      "name": "wiliwili",
+      "aliases": [
+        "wiliwili",
+        "哔哩哔哩",
+        "B站"
+      ],
+      "summary": "在 Switch 上浏览和播放哔哩哔哩视频",
+      "category": "在线视频",
+      "instructions": "下载 Switch 版压缩包，按项目说明保留包内目录。",
+      "repo": "xfangfang/wiliwili",
+      "page": "https://github.com/xfangfang/wiliwili/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "wiliwili-NintendoSwitch.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "wiliwili-NintendoSwitch",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "zip_nro",
+        "asset": "wiliwili-NintendoSwitch.zip",
+        "member_basename": "wiliwili.nro",
+        "target": "sdmc:/switch/wiliwili/wiliwili.nro",
+        "evidence": "https://github.com/xfangfang/wiliwili?ref=winstall"
+      }
+    },
+    {
+      "id": "switch-newpipe",
+      "name": "switch-newpipe",
+      "aliases": [
+        "switch-newpipe",
+        "YouTube",
+        "油管"
+      ],
+      "summary": "在 Switch 上浏览和播放 YouTube 视频",
+      "category": "在线视频",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "mirusu400/switch-newpipe",
+      "page": "https://github.com/mirusu400/switch-newpipe/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "switch_newpipe.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "switch_newpipe",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "switch_newpipe.nro",
+        "target": "sdmc:/switch/switch_newpipe/switch_newpipe.nro"
+      }
+    },
+    {
+      "id": "switch-hongguo",
+      "name": "switch-hongguo",
+      "aliases": [
+        "switch-hongguo",
+        "红果",
+        "短剧"
+      ],
+      "summary": "在 Switch 上浏览红果短剧",
+      "category": "在线视频",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "ZYP-INre/switch-hongguo",
+      "page": "https://github.com/ZYP-INre/switch-hongguo/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "hongguo.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "hongguo",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "hongguo.nro",
+        "target": "sdmc:/switch/hongguo/hongguo.nro"
+      }
+    },
+    {
+      "id": "switchtvbox",
+      "name": "SwitchTVBox",
+      "aliases": [
+        "SwitchTVBox",
+        "影视",
+        "TVBox"
+      ],
+      "summary": "在 Switch 上浏览和播放影视内容",
+      "category": "在线视频",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "lGuann/SwitchTVBox",
+      "page": "https://github.com/lGuann/SwitchTVBox/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "SwitchTVBox",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "tikzen",
+      "name": "Tikzen",
+      "aliases": [
+        "Tikzen",
+        "影视"
+      ],
+      "summary": "在 Switch 上浏览短视频",
+      "category": "在线视频",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "lGuann/Tikzen",
+      "page": "https://github.com/lGuann/Tikzen/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "TikZen",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "hongguo-switch",
+      "name": "hongguo-switch",
+      "aliases": [
+        "hongguo-switch",
+        "红果",
+        "短剧"
+      ],
+      "summary": "用另一款 Switch 客户端浏览红果短剧",
+      "category": "在线视频",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "dongrez1990-cloud/hongguo-switch",
+      "page": "https://github.com/dongrez1990-cloud/hongguo-switch/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".nsp"
+      ],
+      "markers": [
+        "hongguo-build",
+        ".nsp"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "manual_deployment"
+      }
+    },
+    {
+      "id": "streamfin",
+      "name": "StreamFin",
+      "aliases": [
+        "StreamFin",
+        "Stremio"
+      ],
+      "summary": "在 Switch 上浏览和播放网络媒体",
+      "category": "在线视频",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "scamNscoot/StreamFin",
+      "page": "https://github.com/scamNscoot/StreamFin/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "StreamFin.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "StreamFin",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "StreamFin.nro",
+        "target": "sdmc:/switch/StreamFin/StreamFin.nro"
+      }
+    },
+    {
+      "id": "stremnx",
+      "name": "StremNX",
+      "aliases": [
+        "StremNX",
+        "Stremio"
+      ],
+      "summary": "在 Switch 上使用 Stremio 观看网络媒体",
+      "category": "在线视频",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "denpingus/StremNX",
+      "page": "https://github.com/denpingus/StremNX/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "stremnx.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "stremnx",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "stremnx.nro",
+        "target": "sdmc:/switch/stremnx/stremnx.nro"
+      }
+    },
+    {
+      "id": "twinx",
+      "name": "twiNX",
+      "aliases": [
+        "twiNX",
+        "Twitch",
+        "直播"
+      ],
+      "summary": "在 Switch 上观看 Twitch 直播",
+      "category": "在线视频",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "DomazinUS/twiNX",
+      "page": "https://github.com/DomazinUS/twiNX/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "twiNX",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "ytb-player",
+      "name": "ytb-player",
+      "aliases": [
+        "ytb-player",
+        "YouTube",
+        "油管"
+      ],
+      "summary": "用自制播放器观看 YouTube 视频",
+      "category": "在线视频",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "murat303/ytb-player",
+      "page": "https://github.com/murat303/ytb-player/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "ytb-player.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "ytb-player",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "ytb-player.nro",
+        "target": "sdmc:/switch/ytb-player/ytb-player.nro"
+      }
+    },
+    {
+      "id": "nxtube",
+      "name": "YouTube补丁",
+      "aliases": [
+        "YouTube补丁"
+      ],
+      "summary": "给 Switch 官方 YouTube 应用加上网页增强功能",
+      "category": "在线视频",
+      "instructions": "仅提供补丁介绍页面；补丁版本与官方 YouTube App 的兼容性以项目说明为准。",
+      "repo": "",
+      "page": "https://www.gamebrew.org/wiki/NxTube_Switch",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "youtube-switch",
+      "name": "YouTube",
+      "aliases": [
+        "YouTube",
+        "油管"
+      ],
+      "summary": "使用任天堂商店分发的 YouTube 应用",
+      "category": "在线视频",
+      "instructions": "官方商店分发，不是 GitHub Release；安装要求以任天堂商店说明为准。",
+      "repo": "",
+      "page": "https://www.nintendo.com/us/store/products/youtube-switch/",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "switchfin",
+      "name": "switchfin",
+      "aliases": [
+        "switchfin",
+        "Jellyfin",
+        "Emby",
+        "媒体库"
+      ],
+      "summary": "播放 Jellyfin 或 Emby 服务器里的影音",
+      "category": "本地与家庭影音",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "dragonflylee/switchfin",
+      "page": "https://github.com/dragonflylee/switchfin/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "Switchfin.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "Switchfin",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "Switchfin.nro",
+        "target": "sdmc:/switch/Switchfin/Switchfin.nro"
+      }
+    },
+    {
+      "id": "nxmp",
+      "name": "nxmp",
+      "aliases": [
+        "nxmp",
+        "本地视频",
+        "NAS",
+        "SMB",
+        "播放器"
+      ],
+      "summary": "播放 SD 卡、本地存储或网络中的影音",
+      "category": "本地与家庭影音",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "proconsule/nxmp",
+      "page": "https://github.com/proconsule/nxmp/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "nxmp",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "nx-cast",
+      "name": "NX-Cast",
+      "aliases": [
+        "NX-Cast",
+        "投屏",
+        "DLNA",
+        "AirPlay",
+        "IPTV"
+      ],
+      "summary": "接收手机投屏或播放 IPTV 播放列表",
+      "category": "本地与家庭影音",
+      "instructions": "下载 NX-Cast-sdmc.zip，保留目录结构。投屏时把手机和 Switch 连到同一局域网。",
+      "repo": "Ode1l/NX-Cast",
+      "page": "https://github.com/Ode1l/NX-Cast/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "NX-Cast-sdmc.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "NX-Cast-sdmc",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "zip_tree",
+        "asset": "NX-Cast-sdmc.zip",
+        "source_prefix": "switch/NX-Cast/",
+        "target_dir": "sdmc:/switch/NX-Cast",
+        "required": [
+          "NX-Cast.nro"
+        ],
+        "update_prefixes": [
+          "dlna/",
+          "fonts/",
+          "licenses/"
+        ],
+        "update_files": [
+          "NX-Cast.nro"
+        ],
+        "seed_files": [
+          "iptv/sources.txt"
+        ],
+        "preserve_prefixes": [
+          "airplay/",
+          "iptv/"
+        ],
+        "evidence": "https://github.com/Ode1l/NX-Cast#install"
+      }
+    },
+    {
+      "id": "retroarch",
+      "name": "RetroArch",
+      "aliases": [
+        "RetroArch",
+        "模拟器",
+        "全能模拟器"
+      ],
+      "summary": "在 Switch 上管理和启动不同平台的模拟器核心",
+      "category": "游戏与串流",
+      "instructions": "该 GitHub 最新 Release 只有源码包；Switch 构建从官方平台下载页获取。",
+      "repo": "libretro/RetroArch",
+      "page": "https://www.retroarch.com/?page=platforms",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "moonlight-switch",
+      "name": "Moonlight-Switch",
+      "aliases": [
+        "Moonlight-Switch",
+        "月光",
+        "电脑串流"
+      ],
+      "summary": "把电脑游戏的画面和声音串流到 Switch",
+      "category": "游戏与串流",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "XITRIX/Moonlight-Switch",
+      "page": "https://github.com/XITRIX/Moonlight-Switch/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "Moonlight-Switch.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "Moonlight-Switch",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "Moonlight-Switch.nro",
+        "target": "sdmc:/switch/Moonlight-Switch/Moonlight-Switch.nro"
+      }
+    },
+    {
+      "id": "corkdeck",
+      "name": "CorkDeck",
+      "aliases": [
+        "CorkDeck"
+      ],
+      "summary": "尝试在 Switch 上运行部分 Windows 游戏",
+      "category": "游戏与串流",
+      "instructions": "实验性 Windows 游戏运行环境；所需游戏数据需自行准备，兼容性以项目说明为准。",
+      "repo": "plv890/CorkDeck",
+      "page": "https://github.com/plv890/CorkDeck/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "CorkDeck",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "switify",
+      "name": "Switify",
+      "aliases": [
+        "Switify",
+        "Spotify",
+        "音乐"
+      ],
+      "summary": "在 Switch 上浏览和播放 Spotify 音乐",
+      "category": "音乐",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "DomazinUS/Switify",
+      "page": "https://github.com/DomazinUS/Switify/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "Switify",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "nasswitch",
+      "name": "nasswitch",
+      "aliases": [
+        "nasswitch",
+        "NAS音乐",
+        "后台音乐"
+      ],
+      "summary": "播放 NAS 里保存的音乐",
+      "category": "音乐",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "hlhlhl231/nasswitch",
+      "page": "https://github.com/hlhlhl231/nasswitch/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "nasswitch",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "bolemusic_switch",
+      "name": "bolemusic_switch",
+      "aliases": [
+        "bolemusic_switch",
+        "bolemusic"
+      ],
+      "summary": "在 Switch 上使用波乐音乐",
+      "category": "音乐",
+      "instructions": "",
+      "repo": "shellsec/bolemusic",
+      "page": "https://github.com/shellsec/bolemusic/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "bolemusic.nro"
+      ],
+      "match_all": true,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "asset_name_pending"
+      }
+    },
+    {
+      "id": "telegramnx",
+      "name": "TelegramNX",
+      "aliases": [
+        "TelegramNX",
+        "Telegram",
+        "电报"
+      ],
+      "summary": "在 Switch 上使用 Telegram",
+      "category": "社交与阅读",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "CostelaCNX/TelegramNX",
+      "page": "https://github.com/CostelaCNX/TelegramNX/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "TelegramNX",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "sporegram",
+      "name": "sporegram",
+      "aliases": [
+        "sporegram",
+        "Telegram",
+        "电报"
+      ],
+      "summary": "用另一款 Switch 客户端访问 Telegram",
+      "category": "社交与阅读",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "fungalspores/sporegram",
+      "page": "https://github.com/fungalspores/sporegram/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "sporegram.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "sporegram",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "sporegram.nro",
+        "target": "sdmc:/switch/sporegram/sporegram.nro"
+      }
+    },
+    {
+      "id": "qq-for-switch",
+      "name": "QQ-for-Switch",
+      "aliases": [
+        "QQ-for-Switch",
+        "QQ"
+      ],
+      "summary": "尝试在 Switch 上使用 QQ",
+      "category": "社交与阅读",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "shuiwen879867/QQ-for-Switch",
+      "page": "https://github.com/shuiwen879867/QQ-for-Switch/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "QQ-for-Switch",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "asset_name_pending"
+      }
+    },
+    {
+      "id": "koreader-switch",
+      "name": "KOReader-Switch",
+      "aliases": [
+        "KOReader-Switch",
+        "电子书",
+        "阅读器"
+      ],
+      "summary": "在 Switch 上阅读电子书",
+      "category": "社交与阅读",
+      "instructions": "实验性移植；提供 NRO 不等于已验证实机全部功能，兼容性与启动方式以项目说明为准。",
+      "repo": "miikearthur/KOReader-Switch",
+      "page": "https://github.com/miikearthur/KOReader-Switch/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "koreader-switch",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "asset_name_pending"
+      }
+    },
+    {
+      "id": "switch-dit",
+      "name": "switch-dit",
+      "aliases": [
+        "switch-dit",
+        "Reddit"
+      ],
+      "summary": "在 Switch 上浏览 Reddit 帖子",
+      "category": "社交与阅读",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "mena-works/switch-dit",
+      "page": "https://github.com/mena-works/switch-dit/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "switch-dit",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "switch-dsh-client",
+      "name": "switch-dsh-client",
+      "aliases": [
+        "switch-dsh-client",
+        "DeepSeek",
+        "深度求索",
+        "AI聊天"
+      ],
+      "summary": "在 Switch 上与 DeepSeek 对话",
+      "category": "AI与自动化",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "ArakiW/switch-dsh-client",
+      "page": "https://github.com/ArakiW/switch-dsh-client/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "switch-dsh-client.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "switch-dsh-client",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "switch-dsh-client.nro",
+        "target": "sdmc:/switch/switch-dsh-client/switch-dsh-client.nro"
+      }
+    },
+    {
+      "id": "nxcourier",
+      "name": "nxcourier",
+      "aliases": [
+        "nxcourier",
+        "远程控制",
+        "AI自动化"
+      ],
+      "summary": "远程控制 Switch 并查看主机状态和截图",
+      "category": "AI与自动化",
+      "instructions": "已有 Release 标签但没有附件；需按 README 自行构建或配置电脑端工具。",
+      "repo": "granule256/nxcourier",
+      "page": "https://github.com/granule256/nxcourier",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "claude-code-switch",
+      "name": "claude-code-switch",
+      "aliases": [
+        "claude-code-switch",
+        "Claude",
+        "AI聊天"
+      ],
+      "summary": "在 Switch 上使用 Claude Code",
+      "category": "AI与自动化",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "CommunityPokeOrg/claude-code-switch",
+      "page": "https://github.com/CommunityPokeOrg/claude-code-switch/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "claude-code-switch.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "claude-code-switch",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "claude-code-switch.nro",
+        "target": "sdmc:/switch/claude-code-switch/claude-code-switch.nro"
+      }
+    },
+    {
+      "id": "chatnx",
+      "name": "ChatNX",
+      "aliases": [
+        "ChatNX",
+        "AI聊天"
+      ],
+      "summary": "在 Switch 上使用 AI 聊天工具",
+      "category": "AI与自动化",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "Jonathan8520/ChatNX",
+      "page": "https://github.com/Jonathan8520/ChatNX/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "ChatNX.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "ChatNX",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "ChatNX.nro",
+        "target": "sdmc:/switch/ChatNX/ChatNX.nro"
+      }
+    },
+    {
+      "id": "uuremote-ns",
+      "name": "UURemote-ns",
+      "aliases": [
+        "UURemote-ns",
+        "UU远程",
+        "网易UU"
+      ],
+      "summary": "用 Switch 连接 UU 远程服务",
+      "category": "云游戏与远程",
+      "instructions": "预发布固定版本；下载 Switch 完整 ZIP，配对和服务要求见 README，后续版本需人工复核 tag。",
+      "repo": "Antman2023/UURemote-ns",
+      "page": "https://github.com/Antman2023/UURemote-ns/releases/tag/v0.1.6",
+      "url": "",
+      "tag": "v0.1.6",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "UURemote-ns-0.1.6-switch.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "opennow-switch",
+      "name": "OpenNOW-Switch",
+      "aliases": [
+        "OpenNOW-Switch",
+        "GeForce NOW",
+        "GFN",
+        "云游戏"
+      ],
+      "summary": "在 Switch 上连接 GeForce NOW 玩云游戏",
+      "category": "云游戏与远程",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "OpenCloudGaming/OpenNOW-Switch",
+      "page": "https://github.com/OpenCloudGaming/OpenNOW-Switch/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "SwitchNOW",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "zerodroid",
+      "name": "ZERODROID",
+      "aliases": [
+        "ZERODROID",
+        "Boosteroid",
+        "云游戏"
+      ],
+      "summary": "在 Switch 上连接 Boosteroid 玩云游戏",
+      "category": "云游戏与远程",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "elzerdodata/ZERODROID",
+      "page": "https://github.com/elzerdodata/ZERODROID/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "ZERODROID",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "asset_name_pending"
+      }
+    },
+    {
+      "id": "halyard",
+      "name": "Halyard",
+      "aliases": [
+        "Halyard",
+        "Shadow",
+        "云电脑"
+      ],
+      "summary": "用 Switch 连接 Shadow 云电脑",
+      "category": "云游戏与远程",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "Wasabules/Halyard",
+      "page": "https://github.com/Wasabules/Halyard/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "halyard.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "halyard",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "halyard.nro",
+        "target": "sdmc:/switch/halyard/halyard.nro"
+      }
+    },
+    {
+      "id": "nsteamlink",
+      "name": "nsteamlink",
+      "aliases": [
+        "nsteamlink",
+        "Steam串流",
+        "Steam Link"
+      ],
+      "summary": "把 Steam 游戏从电脑串流到 Switch",
+      "category": "云游戏与远程",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "kxn/nsteamlink",
+      "page": "https://github.com/kxn/nsteamlink/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "NSteamLink",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "asset_name_pending"
+      }
+    },
+    {
+      "id": "locals-nx",
+      "name": "LocalS-NX",
+      "aliases": [
+        "LocalS-NX",
+        "LocalSend",
+        "局域网传输"
+      ],
+      "summary": "用 LocalSend 和同一局域网里的设备互传文件",
+      "category": "文件与存档",
+      "instructions": "下载 Switch 版后，和运行 LocalSend 的手机或电脑连接同一局域网。",
+      "repo": "z3lc/LocalS-NX",
+      "page": "https://github.com/z3lc/LocalS-NX/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "LocalS-NX.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "LocalS-NX",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "minfs",
+      "name": "minFS",
+      "aliases": [
+        "minFS",
+        "SD卡管理",
+        "网页文件管理"
+      ],
+      "summary": "用手机或电脑浏览器访问 Switch 的 SD 卡",
+      "category": "文件与存档",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "minbbb/minFS",
+      "page": "https://github.com/minbbb/minFS/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "minFS",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "switchsavesync",
+      "name": "SwitchSaveSync",
+      "aliases": [
+        "SwitchSaveSync",
+        "存档同步",
+        "Google Drive"
+      ],
+      "summary": "把游戏存档同步到 Google Drive",
+      "category": "文件与存档",
+      "instructions": "发布物为 .ovl 插件，另需 overlay 环境及 Google Drive 授权配置；详见项目说明。",
+      "repo": "NspxMiguel/SwitchSaveSync",
+      "page": "https://github.com/NspxMiguel/SwitchSaveSync/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "SwitchSaveSync.ovl"
+      ],
+      "extensions": [
+        ".ovl"
+      ],
+      "markers": [
+        "SwitchSaveSync",
+        ".ovl"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "manual_deployment"
+      }
+    },
+    {
+      "id": "pkhex-nx",
+      "name": "PKHeX-NX",
+      "aliases": [
+        "PKHeX-NX",
+        "宝可梦",
+        "朱紫",
+        "存档编辑"
+      ],
+      "summary": "在 Switch 上编辑宝可梦存档",
+      "category": "文件与存档",
+      "instructions": "Beta 固定版本，下载包含应用与资源的标准 ZIP；按发布说明用完整内存模式启动，后续版本需人工复核 tag。",
+      "repo": "cbreezy210/PKHeX-NX",
+      "page": "https://github.com/cbreezy210/PKHeX-NX/releases/tag/v0.9.5-beta",
+      "url": "",
+      "tag": "v0.9.5-beta",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "PKHeX-NX-Beta-v0.9.5.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "nxshare",
+      "name": "NXShare",
+      "aliases": [
+        "NXShare",
+        "相册",
+        "截图",
+        "视频导出"
+      ],
+      "summary": "用浏览器查看和下载 Switch 相册里的截图与视频",
+      "category": "文件与存档",
+      "instructions": "在 Switch 启动工具后，用手机或电脑打开它显示的地址。",
+      "repo": "musebrot1/NXShare",
+      "page": "https://github.com/musebrot1/NXShare/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "NXShare.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "NXShare",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "NXShare.nro",
+        "target": "sdmc:/switch/NXShare/NXShare.nro"
+      }
+    },
+    {
+      "id": "checkpoint",
+      "name": "存档备份",
+      "aliases": [
+        "存档备份",
+        "检查点"
+      ],
+      "summary": "备份或还原 Switch 游戏存档",
+      "category": "文件与存档",
+      "instructions": "下载 Switch 版 Checkpoint.nro。已有存档可以先备份，再进行还原。",
+      "repo": "BernardoGiordano/Checkpoint",
+      "page": "https://github.com/BernardoGiordano/Checkpoint/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "Checkpoint.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "Checkpoint.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "Checkpoint.nro",
+        "target": "sdmc:/switch/Checkpoint/Checkpoint.nro"
+      }
+    },
+    {
+      "id": "nxdumptool",
+      "name": "游戏备份",
+      "aliases": [
+        "游戏备份",
+        "导出"
+      ],
+      "summary": "导出自己主机上的游戏卡带或已安装内容",
+      "category": "文件与存档",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "DarkMatterCore/nxdumptool",
+      "page": "https://github.com/DarkMatterCore/nxdumptool/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "nxdumptool.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "nxdumptool.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "nxdumptool.nro",
+        "target": "sdmc:/switch/nxdumptool/nxdumptool.nro"
+      }
+    },
+    {
+      "id": "goldleaf",
+      "name": "金叶",
+      "aliases": [
+        "金叶",
+        "文件管理"
+      ],
+      "summary": "在 Switch 上浏览文件和管理已安装内容",
+      "category": "文件与存档",
+      "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
+      "repo": "XorTroll/Goldleaf",
+      "page": "https://github.com/XorTroll/Goldleaf/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "Goldleaf.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "Goldleaf.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "Goldleaf.nro",
+        "target": "sdmc:/switch/Goldleaf/Goldleaf.nro"
+      }
+    },
+    {
+      "id": "dbipatcher",
+      "name": "DBI英文版",
+      "aliases": [
+        "DBI英文版",
+        "DBI汉化",
+        "DBI翻译"
+      ],
+      "summary": "使用支持外部语言文件的 DBI",
+      "category": "文件与存档",
+      "instructions": "配套 dbi-translation-zhcn；必须使用同一发布版本的 DBI.nro 与翻译文件。",
+      "repo": "rashevskyv/DBIPatcher",
+      "page": "https://github.com/rashevskyv/DBIPatcher/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "DBI.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "DBI.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "paired_translation"
+      }
+    },
+    {
+      "id": "n-xplorer",
+      "name": "文本编辑",
+      "aliases": [
+        "文本编辑",
+        "文件管理"
+      ],
+      "summary": "在 Switch 上整理文件并编辑文本",
+      "category": "文件与存档",
+      "instructions": "当前仅发现预发布 N-Xplorer.nro，固定到已核查 tag，后续需人工更新。",
+      "repo": "Craftyawesome/N-Xplorer",
+      "page": "https://github.com/Craftyawesome/N-Xplorer/releases/tag/0.7.1-crash-fix",
+      "url": "",
+      "tag": "0.7.1-crash-fix",
+      "names": [
+        "N-Xplorer.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "N-Xplorer.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "N-Xplorer.nro",
+        "target": "sdmc:/switch/N-Xplorer/N-Xplorer.nro"
+      }
+    },
+    {
+      "id": "dbi-translation-zhcn",
+      "name": "DBI汉化",
+      "aliases": [
+        "DBI汉化",
+        "translation.bin",
+        "简体中文"
+      ],
+      "summary": "给兼容版本的 DBI 加上简体中文",
+      "category": "文件与存档",
+      "instructions": "将 translation_zhcn.bin 改名为 translation.bin，与本目录 dbipatcher 对应的 DBI.nro 放在同一文件夹。",
+      "repo": "rashevskyv/DBIPatcher",
+      "page": "https://github.com/rashevskyv/DBIPatcher/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "translation_zhcn.bin"
+      ],
+      "extensions": [
+        ".bin"
+      ],
+      "markers": [
+        "translation_zhcn.bin"
+      ],
+      "match_all": true,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "manual_deployment"
+      }
+    },
+    {
+      "id": "touhou-switch",
+      "name": "touhou-switch",
+      "aliases": [
+        "touhou-switch",
+        "东方"
+      ],
+      "summary": "在 Switch 上运行东方系列移植版",
+      "category": "游戏移植",
+      "instructions": "当前未发现公开 Release；查看仓库构建说明，游戏数据需自备。",
+      "repo": "saekaze/touhou-switch",
+      "page": "https://github.com/saekaze/touhou-switch",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "sh3-nx",
+      "name": "sh3-nx",
+      "aliases": [
+        "sh3-nx",
+        "寂静岭3"
+      ],
+      "summary": "在 Switch 上运行《寂静岭 3》移植版",
+      "category": "游戏移植",
+      "instructions": "只提供移植程序，游戏数据需按项目说明自行准备。",
+      "repo": "cutarev/sh3-nx",
+      "page": "https://github.com/cutarev/sh3-nx/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "sh",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "asset_name_pending"
+      }
+    },
+    {
+      "id": "zomboid-switch",
+      "name": "zomboid-switch",
+      "aliases": [
+        "zomboid-switch",
+        "僵尸毁灭工程"
+      ],
+      "summary": "在 Switch 上运行《僵尸毁灭工程》移植版",
+      "category": "游戏移植",
+      "instructions": "当前未发现公开 Release；查看仓库说明，游戏数据需自备。",
+      "repo": "etonedemid/zomboid-switch",
+      "page": "https://github.com/etonedemid/zomboid-switch",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "sms-switch",
+      "name": "sms-switch",
+      "aliases": [
+        "sms-switch",
+        "超级马里奥阳光"
+      ],
+      "summary": "在 Switch 上运行《超级马力欧阳光》移植版",
+      "category": "游戏移植",
+      "instructions": "预发布固定版本，选择 sms-switch.zip；需要自备游戏数据，后续版本需人工复核 tag。",
+      "repo": "chasem-dev/sms-switch",
+      "page": "https://github.com/chasem-dev/sms-switch/releases/tag/v0.3.0",
+      "url": "",
+      "tag": "v0.3.0",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "sms-switch.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "megamanx-nx",
+      "name": "MegaManX-NX",
+      "aliases": [
+        "MegaManX-NX",
+        "洛克人X"
+      ],
+      "summary": "在 Switch 上运行《洛克人 X》移植版",
+      "category": "游戏移植",
+      "instructions": "优先完整 ZIP；所需游戏资源按项目说明准备。",
+      "repo": "Thorhax/MegaManX-NX",
+      "page": "https://github.com/Thorhax/MegaManX-NX/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "MegaManX-NX.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "MegaManX-NX",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "ikemen-nx",
+      "name": "ikemen-nx",
+      "aliases": [
+        "ikemen-nx",
+        "MUGEN",
+        "格斗引擎"
+      ],
+      "summary": "在 Switch 上运行兼容 MUGEN 的格斗引擎",
+      "category": "游戏移植",
+      "instructions": "优先 sd.zip 完整包；不要只取辅助 nxconfig.nro 而遗漏主程序与资源。",
+      "repo": "juanp9180-cmyk/ikemen-nx",
+      "page": "https://github.com/juanp9180-cmyk/ikemen-nx/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "ikemen-nx",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "portnx",
+      "name": "PortNX",
+      "aliases": [
+        "PortNX",
+        "移植商店"
+      ],
+      "summary": "查找 Switch 游戏移植项目",
+      "category": "游戏移植",
+      "instructions": "用于浏览移植项目；各游戏的数据与使用要求以对应项目说明为准。",
+      "repo": "CostelaCNX/PortNX",
+      "page": "https://github.com/CostelaCNX/PortNX/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "PortNX",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "windows",
+        "Windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Overlay",
+        "overlay",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "nxthemes-installer",
+      "name": "主题",
+      "aliases": [
+        "主题",
+        "主题安装"
+      ],
+      "summary": "安装或更换 Switch 的 HOME 菜单主题",
+      "category": "主题与显示",
+      "instructions": "仅下载主机端 NRO，不下载电脑端 NxThemeTool.zip；主题需与当前系统适配。",
+      "repo": "exelix11/SwitchThemeInjector",
+      "page": "https://github.com/exelix11/SwitchThemeInjector/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "NXThemesInstaller.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "NXThemesInstaller.nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "NXThemesInstaller.nro",
+        "target": "sdmc:/switch/NXThemesInstaller/NXThemesInstaller.nro"
+      }
+    },
+    {
+      "id": "fizeau",
+      "name": "色温",
+      "aliases": [
+        "色温",
+        "护眼",
+        "色彩"
+      ],
+      "summary": "调节屏幕的色温和色彩",
+      "category": "主题与显示",
+      "instructions": "下载 Switch 版压缩包。解压时保留包内目录，依赖见项目说明。",
+      "repo": "averne/Fizeau",
+      "page": "https://github.com/averne/Fizeau/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "Fizeau-"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "status-monitor-overlay",
+      "name": "性能监控",
+      "aliases": [
+        "性能监控",
+        "温度",
+        "帧率监控"
+      ],
+      "summary": "在游戏中查看帧率、温度和硬件状态",
+      "category": "主题与显示",
+      "instructions": "悬浮窗需兼容的菜单与 overlay 加载器。",
+      "repo": "masagrator/Status-Monitor-Overlay",
+      "page": "https://github.com/masagrator/Status-Monitor-Overlay/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "Status-Monitor-Overlay.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "Status-Monitor-Overlay.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "fpslocker",
+      "name": "帧率",
+      "aliases": [
+        "帧率",
+        "锁帧"
+      ],
+      "summary": "在游戏中调整支持的帧率设置",
+      "category": "主题与显示",
+      "instructions": "悬浮插件需配套环境及游戏设置；操作要求查看项目说明。",
+      "repo": "masagrator/FPSLocker",
+      "page": "https://github.com/masagrator/FPSLocker/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "FPSLocker.ovl"
+      ],
+      "extensions": [
+        ".ovl"
+      ],
+      "markers": [
+        "FPSLocker.ovl"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "Windows",
+        "windows",
+        "linux",
+        "Linux",
+        "macOS",
+        "Debug",
+        "debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "manual_deployment"
+      }
+    },
+    {
+      "id": "nx-ovlloader-zdm",
+      "name": "Tesla启动器",
+      "aliases": [
+        "Tesla启动器",
+        "汉化加载器"
+      ],
+      "summary": "加载 zdm 分支支持的悬浮菜单插件",
+      "category": "悬浮插件",
+      "instructions": "汉化分支的 overlay 加载器；按 ZIP 目录放置，与所选菜单及当前系统版本配套。",
+      "repo": "zdm65477730/nx-ovlloader",
+      "page": "https://github.com/zdm65477730/nx-ovlloader/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "nx-ovlloader.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "nx-ovlloader.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "ultrahand-zdm",
+      "name": "Tesla菜单",
+      "aliases": [
+        "Tesla菜单",
+        "汉化菜单"
+      ],
+      "summary": "用中文悬浮菜单打开插件和运行脚本",
+      "category": "悬浮插件",
+      "instructions": "汉化分支完整菜单包；与原版 Tesla/Ultrahand 是替代选择，避免同时覆盖同名菜单文件。",
+      "repo": "zdm65477730/Ultrahand-Overlay",
+      "page": "https://github.com/zdm65477730/Ultrahand-Overlay/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "Ultrahand.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "Ultrahand.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "ovl-sysmodules-zdm",
+      "name": "系统模块管理",
+      "aliases": [
+        "系统模块管理",
+        "插件开关"
+      ],
+      "summary": "在中文悬浮菜单里启用或停用系统模块",
+      "category": "悬浮插件",
+      "instructions": "系统模块开关悬浮插件；需要 overlay 加载器与菜单。",
+      "repo": "zdm65477730/ovl-sysmodules",
+      "page": "https://github.com/zdm65477730/ovl-sysmodules/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "ovl-sysmodules.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "ovl-sysmodules.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "edizon-overlay-zdm",
+      "name": "金手指",
+      "aliases": [
+        "金手指",
+        "EdiZon.ovl",
+        "Edizon.nro"
+      ],
+      "summary": "在中文悬浮界面中管理金手指和修改数值",
+      "category": "悬浮插件",
+      "instructions": "下载 EdiZon.zip 套件；NRO/OVL 以压缩包实际内容为准，不把单独的 overlay 描述成独立 NRO。",
+      "repo": "zdm65477730/EdiZon-Overlay",
+      "page": "https://github.com/zdm65477730/EdiZon-Overlay/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "EdiZon.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "EdiZon.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "sys-clk-zdm",
+      "name": "超频插件",
+      "aliases": [
+        "超频插件",
+        "sys-clk.ovl"
+      ],
+      "summary": "用中文界面调整游戏运行频率",
+      "category": "悬浮插件",
+      "instructions": "下载 sys-clk.zip 主机端套件；需要模块与菜单配套，支持频率以设备和项目说明为准。",
+      "repo": "zdm65477730/sys-clk",
+      "page": "https://github.com/zdm65477730/sys-clk/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "sys-clk.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "sys-clk.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "status-monitor-zdm",
+      "name": "实时监控",
+      "aliases": [
+        "实时监控",
+        "StatusMonitor.ovl"
+      ],
+      "summary": "在中文悬浮界面中查看帧率和硬件状态",
+      "category": "悬浮插件",
+      "instructions": "下载 StatusMonitor.zip；退出快捷键和资源依赖以所下载分支说明为准。",
+      "repo": "zdm65477730/Status-Monitor-Overlay",
+      "page": "https://github.com/zdm65477730/Status-Monitor-Overlay/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "StatusMonitor.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "StatusMonitor.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "commonproblemresolver",
+      "name": "关闭插件",
+      "aliases": [
+        "关闭插件",
+        "删除主题",
+        "启动修复"
+      ],
+      "summary": "通过 Hekate 启动排查工具，处理常见启动问题",
+      "category": "引导与维护载荷",
+      "instructions": "Hekate 下运行的维护载荷；.bin 放入 SD:/bootloader/payloads/。功能及支持机型查看发布说明。",
+      "repo": "zdm65477730/CommonProblemResolver",
+      "page": "https://github.com/zdm65477730/CommonProblemResolver/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "CommonProblemResolver.bin"
+      ],
+      "extensions": [
+        ".bin"
+      ],
+      "markers": [
+        "CommonProblemResolver.bin"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "manual_deployment"
+      }
+    },
+    {
+      "id": "lockpick-rcm",
+      "name": "密钥导出",
+      "aliases": [
+        "密钥导出",
+        "prod.keys"
+      ],
+      "summary": "从自己的 Switch 导出主机密钥",
+      "category": "引导与维护载荷",
+      "instructions": "选择 _Hekate.zip 版本；解压后按包内说明放置载荷，导出文件位置以项目说明为准。",
+      "repo": "impeeza/Lockpick_RCMDecScots",
+      "page": "https://github.com/impeeza/Lockpick_RCMDecScots/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "Lockpick_RCM-",
+        "_Hekate.zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "tegraexplorer-ext",
+      "name": "TE脚本",
+      "aliases": [
+        "TE脚本",
+        "载荷文件管理"
+      ],
+      "summary": "在系统启动前浏览文件和运行维护脚本",
+      "category": "引导与维护载荷",
+      "instructions": "Hekate 下运行的文件管理载荷包；保留包内目录结构，额外 TE 脚本按项目说明放置。",
+      "repo": "sthetix/TegraExplorer-Ext",
+      "page": "https://github.com/sthetix/TegraExplorer-Ext/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "TegraExplorer-Ext-",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "hwfly-toolbox",
+      "name": "硬破",
+      "aliases": [
+        "硬破",
+        "HWFLY工具箱"
+      ],
+      "summary": "使用 HWFLY 芯片的维护工具",
+      "category": "引导与维护载荷",
+      "instructions": "HWFLY 工具箱 .bin，放入 bootloader/payloads/；仅用于与项目匹配的芯片，不执行刷写。",
+      "repo": "hwfly-nx/hwfly-toolbox",
+      "page": "https://github.com/hwfly-nx/hwfly-toolbox/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "hwfly_toolbox.bin"
+      ],
+      "extensions": [
+        ".bin"
+      ],
+      "markers": [
+        "hwfly_toolbox.bin"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "manual_deployment"
+      }
+    },
+    {
+      "id": "downgradefixer",
+      "name": "降级修复",
+      "aliases": [
+        "降级修复",
+        "2162-0002"
+      ],
+      "summary": "尝试修复系统降级后的启动故障",
+      "category": "引导与维护载荷",
+      "instructions": "Hekate 下运行的故障修复载荷包；具体可修复问题与系统条件查看项目说明，不自动运行。",
+      "repo": "sthetix/DowngradeFixer",
+      "page": "https://github.com/sthetix/DowngradeFixer/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "DowngradeFixer-",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "warmboot-extractor",
+      "name": "休眠修复",
+      "aliases": [
+        "休眠修复",
+        "warmboot_mariko"
+      ],
+      "summary": "从兼容的 Mariko 主机提取 Warmboot 组件",
+      "category": "引导与维护载荷",
+      "instructions": "Warmboot 提取载荷包；适用机型和提取前提查看 README，不将它视为全机型通用。",
+      "repo": "sthetix/Warmboot-Extractor",
+      "page": "https://github.com/sthetix/Warmboot-Extractor/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "Warmboot_Extractor-",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "hwfly-firmware",
+      "name": "SDLoader",
+      "aliases": [
+        "SDLoader",
+        "sdloader.enc"
+      ],
+      "summary": "获取对应 HWFLY 芯片的固件和 SDLoader",
+      "category": "芯片固件",
+      "instructions": "完整固件 ZIP；按硬件版本与 README 选择其中的 firmware/SDLoader 文件，下载不会改名或刷写。",
+      "repo": "hwfly-nx/firmware",
+      "page": "https://github.com/hwfly-nx/firmware/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [
+        ".zip"
+      ],
+      "markers": [
+        "release_",
+        ".zip"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "archive_layout_pending"
+      }
+    },
+    {
+      "id": "picofly-firmwares",
+      "name": "树莓派芯片",
+      "aliases": [
+        "树莓派芯片",
+        "RP2040",
+        "picofly_toolbox.bin"
+      ],
+      "summary": "查找与 Picofly 芯片型号对应的固件",
+      "category": "芯片固件",
+      "instructions": "固件保存在仓库 Firmwares/，没有稳定 Release；保留目录页面入口，手动选择对应硬件文件。",
+      "repo": "Ansem-SoD/Picofly",
+      "page": "https://github.com/Ansem-SoD/Picofly/tree/main/Firmwares",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "picofly-usk",
+      "name": "树莓派固件",
+      "aliases": [
+        "树莓派固件",
+        "RP2040",
+        "update.bin"
+      ],
+      "summary": "获取 Picofly USK 固件更新文件",
+      "category": "芯片固件",
+      "instructions": "下载主机更新用 update.bin；同页 firmware.uf2 是另一分发形式，硬件与升级方式以项目说明为准。",
+      "repo": "rehius/usk",
+      "page": "https://github.com/rehius/usk/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "update.bin"
+      ],
+      "extensions": [
+        ".bin"
+      ],
+      "markers": [
+        "update.bin"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "reason": "manual_deployment"
+      }
+    },
+    {
+      "id": "ips-patch-creator",
+      "name": "IPS",
+      "aliases": [
+        "IPS",
+        "签名补丁制作"
+      ],
+      "summary": "在电脑上制作 IPS 补丁",
+      "category": "配套资料与电脑工具",
+      "instructions": "电脑端制作工具页面；不作为 Switch NRO 下载或执行。",
+      "repo": "",
+      "page": "https://gbatemp.net/download/ips-patch-creator.39133/",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "sigpatch-database",
+      "name": "签名补丁数据库",
+      "aliases": [
+        "签名补丁数据库",
+        "patch_database"
+      ],
+      "summary": "查找供 Ghidra 分析使用的签名补丁资料",
+      "category": "配套资料与电脑工具",
+      "instructions": "仓库中的补丁数据库目录，手动查阅与选择。",
+      "repo": "",
+      "page": "https://github.com/borntohonk/Switch-Ghidra-Guides/tree/master/patch_database",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "ns-usbloader",
+      "name": "USB安装",
+      "aliases": [
+        "USB安装",
+        "Awoo配套",
+        "电脑端"
+      ],
+      "summary": "从电脑通过 USB 或网络向 Switch 发送文件",
+      "category": "配套资料与电脑工具",
+      "instructions": "电脑端配套 Awoo 等主机应用；在发布页选择本机系统及 Java 版本对应文件，不复制到 Switch 作为 NRO。",
+      "repo": "",
+      "page": "https://github.com/developersu/ns-usbloader/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "simplemodmanager",
+      "name": "SimpleModManager",
+      "aliases": [
+        "SimpleModManager",
+        "模组管理",
+        "MOD 管理"
+      ],
+      "summary": "在 Switch 上启用、停用和整理游戏模组",
+      "category": "日常工具",
+      "instructions": "下载图形版 NRO。模组目录和兼容性见项目说明。",
+      "repo": "nadrino/SimpleModManager",
+      "page": "https://github.com/nadrino/SimpleModManager/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "SimpleModManager.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [],
+      "match_all": false,
+      "exclude": [
+        "SimpleModManagerConsole"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "SimpleModManager.nro",
+        "target": "sdmc:/switch/SimpleModManager/SimpleModManager.nro"
+      }
+    },
+    {
+      "id": "homebrew-details",
+      "name": "Homebrew Details",
+      "aliases": [
+        "Homebrew Details",
+        "自制应用管理",
+        "NRO 管理"
+      ],
+      "summary": "查看、整理和启动 SD 卡上的自制应用",
+      "category": "日常工具",
+      "instructions": "从发布页选择 Switch 版，按页面说明放置附件。",
+      "repo": "Chrscool8/Homebrew-Details",
+      "page": "https://github.com/Chrscool8/Homebrew-Details/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "switchwave",
+      "name": "SwitchWave",
+      "aliases": [
+        "SwitchWave",
+        "硬解播放器",
+        "mpv"
+      ],
+      "summary": "在 Switch 上硬解播放本地视频或网络共享里的影音",
+      "category": "本地与家庭影音",
+      "instructions": "下载完整压缩包后，按项目说明将内容合并到 SD 卡。",
+      "repo": "averne/SwitchWave",
+      "page": "https://github.com/averne/SwitchWave/releases",
+      "url": "",
+      "tag": "",
+      "names": [],
+      "extensions": [],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "open_page",
+        "reason": "page_distribution"
+      }
+    }
+  ]
+}

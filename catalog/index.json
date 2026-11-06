@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "platforms": {
+    "switch": "switch-catalog.json"
+  }
+}
