@@ -3597,6 +3597,38 @@
       }
     },
     {
+      "id": "slaunch",
+      "name": "sLaunch",
+      "aliases": [
+        "sInstaller",
+        "HOME 菜单替换",
+        "动态壁纸",
+        "视频壁纸"
+      ],
+      "summary": "替换 Switch HOME 菜单，支持自定义图片和视频壁纸",
+      "category": "主题与显示",
+      "instructions": "工具市场将官方 sInstaller 放到自制程序目录。从 Homebrew Menu 打开 sInstaller，按官方发布说明安装或升级 HOME 菜单。",
+      "repo": "etonedemid/slaunch",
+      "page": "https://github.com/etonedemid/slaunch/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "sInstaller.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [],
+      "match_all": false,
+      "exclude": [],
+      "install": {
+        "schema": 1,
+        "mode": "nro",
+        "asset": "sInstaller.nro",
+        "target": "sdmc:/switch/sInstaller/sInstaller.nro"
+      }
+    },
+    {
       "id": "nxthemes-installer",
       "name": "主题",
       "aliases": [
