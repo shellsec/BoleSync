@@ -1226,7 +1226,7 @@
         "游戏时长"
       ],
       "summary": "用中文查看各游戏的游玩时长",
-      "category": "日常工具",
+      "category": "游玩统计",
       "instructions": "游玩时间记录工具汉化分支；主机端 NRO。",
       "repo": "zdm65477730/NX-Activity-Log",
       "page": "https://github.com/zdm65477730/NX-Activity-Log/releases",
@@ -2068,7 +2068,7 @@
         "全能模拟器"
       ],
       "summary": "在 Switch 上管理和启动不同平台的模拟器核心",
-      "category": "游戏与串流",
+      "category": "模拟器前端",
       "instructions": "该 GitHub 最新 Release 只有源码包；Switch 构建从官方平台下载页获取。",
       "repo": "libretro/RetroArch",
       "page": "https://www.retroarch.com/?page=platforms",
@@ -2094,7 +2094,7 @@
         "电脑串流"
       ],
       "summary": "把电脑游戏的画面和声音串流到 Switch",
-      "category": "游戏与串流",
+      "category": "电脑串流",
       "instructions": "下载 Switch 版文件。放置位置和依赖见项目说明。",
       "repo": "XITRIX/Moonlight-Switch",
       "page": "https://github.com/XITRIX/Moonlight-Switch/releases",
@@ -2427,7 +2427,7 @@
         "阅读器"
       ],
       "summary": "在 Switch 上阅读电子书",
-      "category": "社交与阅读",
+      "category": "本地阅读",
       "instructions": "实验性移植；提供 NRO 不等于已验证实机全部功能，兼容性与启动方式以项目说明为准。",
       "repo": "miikearthur/KOReader-Switch",
       "page": "https://github.com/miikearthur/KOReader-Switch/releases",
@@ -2677,17 +2677,19 @@
       ],
       "summary": "用 Switch 连接 UU 远程服务",
       "category": "云游戏与远程",
-      "instructions": "预发布固定版本；下载 Switch 完整 ZIP，配对和服务要求见 README，后续版本需人工复核 tag。",
+      "instructions": "在电脑安装并登录原版 UU 远程。在 Switch 按住 R 启动游戏进入完整内存 Homebrew Menu，再启动应用。上游仍在验证 Switch 真机串流。",
       "repo": "Antman2023/UURemote-ns",
-      "page": "https://github.com/Antman2023/UURemote-ns/releases/tag/v0.1.6",
+      "page": "https://github.com/Antman2023/UURemote-ns/releases/tag/v0.1.7",
       "url": "",
-      "tag": "v0.1.6",
-      "names": [],
+      "tag": "v0.1.7",
+      "names": [
+        "UURemote-ns-0.1.7-switch.zip"
+      ],
       "extensions": [
         ".zip"
       ],
       "markers": [
-        "UURemote-ns-0.1.6-switch.zip"
+        "UURemote-ns-0.1.7-switch.zip"
       ],
       "match_all": true,
       "exclude": [
@@ -3719,7 +3721,7 @@
         "帧率监控"
       ],
       "summary": "在游戏中查看帧率、温度和硬件状态",
-      "category": "主题与显示",
+      "category": "性能监控",
       "instructions": "悬浮窗需兼容的菜单与 overlay 加载器。",
       "repo": "masagrator/Status-Monitor-Overlay",
       "page": "https://github.com/masagrator/Status-Monitor-Overlay/releases",
@@ -3760,7 +3762,7 @@
         "锁帧"
       ],
       "summary": "在游戏中调整支持的帧率设置",
-      "category": "主题与显示",
+      "category": "帧率工具",
       "instructions": "悬浮插件需配套环境及游戏设置；操作要求查看项目说明。",
       "repo": "masagrator/FPSLocker",
       "page": "https://github.com/masagrator/FPSLocker/releases",
@@ -4439,7 +4441,7 @@
         "NRO 管理"
       ],
       "summary": "查看、整理和启动 SD 卡上的自制应用",
-      "category": "日常工具",
+      "category": "自制应用管理",
       "instructions": "从发布页选择 Switch 版，按页面说明放置附件。",
       "repo": "Chrscool8/Homebrew-Details",
       "page": "https://github.com/Chrscool8/Homebrew-Details/releases",
@@ -4480,6 +4482,275 @@
         "schema": 1,
         "mode": "open_page",
         "reason": "page_distribution"
+      }
+    },
+    {
+      "id": "lunarnx",
+      "tool_guide": {
+        "依赖与准备": "Switch 需能运行自制应用，并以标题接管进入完整内存 Homebrew Menu。Xbox 或 PS4/PS5 需开启远程功能。Xbox 云游戏需要账号及地区符合资格。",
+        "启用入口": "通过市场安装官方 LunarNX.nro，再从 Homebrew Menu 启动并选择 Xbox 或 PlayStation。",
+        "配对与连接": "Xbox 按应用提示用手机登录微软账号。PS4/PS5 局域网配对需输入主机生成的 PIN。PS5 通过互联网串流需登录 PSN。",
+        "停用与恢复": "退出 LunarNX 后可在市场恢复上一版 NRO。应用目录可能含登录凭据，请勿通过网页、USB 或 NAS 共享整个目录。"
+      },
+      "name": "LunarNX",
+      "aliases": [
+        "Xbox Remote Play",
+        "Xbox Cloud Gaming",
+        "xCloud",
+        "PS4",
+        "PS5",
+        "PlayStation Remote Play"
+      ],
+      "summary": "在 Switch 上串流 Xbox、Xbox 云游戏和 PlayStation",
+      "category": "云游戏与远程",
+      "instructions": "使用完整内存 Homebrew Menu 启动。更新与回滚仅替换 LunarNX.nro。",
+      "repo": "thinkzhou/LunarNX",
+      "page": "https://github.com/thinkzhou/LunarNX/releases",
+      "url": "",
+      "tag": "",
+      "names": [
+        "LunarNX.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "LunarNX",
+        ".nro"
+      ],
+      "match_all": true,
+      "exclude": [
+        "source",
+        "Source",
+        "debug",
+        "Debug"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "flashnx",
+      "name": "FlashNX",
+      "aliases": [
+        "Flash",
+        "Ruffle",
+        "SWF"
+      ],
+      "summary": "在 Switch 上运行 SD 卡里的 Flash 游戏和动画",
+      "category": "游戏移植",
+      "instructions": "安装后从 Homebrew Menu 启动，在应用内选择 SD 卡上的 SWF 文件。",
+      "repo": "Jonathan8520/FlashNX",
+      "page": "https://github.com/Jonathan8520/FlashNX/releases",
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "brewser",
+      "name": "Brewser",
+      "aliases": [
+        "WebGL",
+        "Web MIDI",
+        "网页应用"
+      ],
+      "summary": "在 Switch 上运行网页应用和 WebGL 内容",
+      "category": "日常工具",
+      "instructions": "安装官方 NRO 后从 Homebrew Menu 启动。",
+      "repo": "natureglass/Brewser",
+      "page": "https://github.com/natureglass/Brewser/releases",
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "gamehubnx",
+      "name": "GameHubNX",
+      "repo": "luishidalgoa/GameHubNX",
+      "page": "https://github.com/luishidalgoa/GameHubNX/releases",
+      "url": "",
+      "category": "文件与存档",
+      "summary": "连接你自己的 GameHub 服务器，使用自有文件库。",
+      "instructions": "连接你自己的 GameHub 服务器，使用自有文件库。",
+      "names": [
+        "gamehubnx.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "tmcexplorer-nx",
+      "name": "TmcExplorer-NX",
+      "repo": "TM-C0M8U570RZ/TmcExplorer-NX",
+      "page": "https://github.com/TM-C0M8U570RZ/TmcExplorer-NX/releases",
+      "url": "",
+      "category": "文件与存档",
+      "summary": "从 Homebrew Menu 启动，在 Switch 上管理 SD 卡文件。",
+      "instructions": "从 Homebrew Menu 启动，在 Switch 上管理 SD 卡文件。",
+      "names": [
+        "TmcExplorer-NX.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "hometile",
+      "name": "HomeTile",
+      "repo": "Amir-Ehsani/HomeTile-switch",
+      "page": "https://github.com/Amir-Ehsani/HomeTile-switch/releases",
+      "url": "",
+      "category": "系统基础",
+      "summary": "从 Homebrew Menu 启动，选择 SD 卡上的自制应用创建 HOME 入口。",
+      "instructions": "从 Homebrew Menu 启动，选择 SD 卡上的自制应用创建 HOME 入口。",
+      "names": [
+        "HomeTile.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "battery-desync-fix-nx",
+      "name": "Battery Desync Fix NX",
+      "repo": "CTCaer/battery_desync_fix_nx",
+      "page": "https://github.com/CTCaer/battery_desync_fix_nx/releases",
+      "category": "系统基础",
+      "summary": "校准 Switch 电池电量计",
+      "instructions": "下载官方 NRO，使用前按上游说明核对机型和校准步骤。",
+      "extensions": [
+        ".nro"
+      ],
+      "markers": [
+        "battery_desync_fix_"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "scummvm",
+      "name": "ScummVM",
+      "page": "https://www.scummvm.org/en/downloads/",
+      "url": "https://downloads.scummvm.org/frs/scummvm/2026.4.0/scummvm-2026.4.0-switch.zip",
+      "category": "游戏移植",
+      "summary": "运行经典冒险游戏",
+      "instructions": "下载官方 Switch ZIP，按官方说明解包并导入自有游戏文件。",
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "vita3k-nx",
+      "name": "Vita3K-nx",
+      "repo": "NaGaa95/Vita3K-nx",
+      "page": "https://github.com/NaGaa95/Vita3K-nx/releases",
+      "category": "模拟器",
+      "summary": "PS Vita 模拟器",
+      "instructions": "实验性 Switch 移植。从 Homebrew Menu 启动，按上游说明准备 PS Vita 固件和自有游戏。",
+      "names": [
+        "Vita3K.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "dsmile-nx",
+      "name": "D.Smile NX",
+      "repo": "1timewire1/D.Smile_nx",
+      "page": "https://github.com/1timewire1/D.Smile_nx/releases",
+      "category": "模拟器",
+      "summary": "VTech V.Smile 模拟器",
+      "instructions": "从 Homebrew Menu 启动。自有 .bin 卡带文件放在 sdmc:/switch/dsmile/games/，可选 BIOS 放在 sdmc:/switch/dsmile/bios/。",
+      "names": [
+        "dsmile_switch.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "the-oracles-project-nx",
+      "name": "The Oracles Project NX",
+      "repo": "toniisound/The-Oracles-Project-NX",
+      "page": "https://github.com/toniisound/The-Oracles-Project-NX/releases",
+      "category": "游戏移植",
+      "summary": "在 Switch 上运行 Oracle of Ages 与 Oracle of Seasons",
+      "instructions": "将自有美版 ROM（.gbc 或 .zip）放在 sdmc:/switch/the-oracles-project-nx/roms/，再从 Homebrew Menu 启动。",
+      "names": [
+        "the-oracles-project-nx.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "th12-switch",
+      "name": "东方星莲船（TH12）",
+      "repo": "saekaze/th12-switch",
+      "page": "https://github.com/saekaze/th12-switch/releases",
+      "category": "游戏移植",
+      "summary": "东方星莲船的 Switch 移植",
+      "instructions": "自备日版 1.00b 的 th12.exe 和 th12.dat，放到 NRO 同目录。thbgm.dat 可选，用于背景音乐。",
+      "names": [
+        "touhou12.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
+    },
+    {
+      "id": "openmohaa-nx",
+      "name": "OpenMoHAA NX",
+      "repo": "NaGaa95/openmohaa_nx",
+      "page": "https://github.com/NaGaa95/openmohaa_nx/releases",
+      "category": "游戏移植",
+      "summary": "荣誉勋章：联合袭击的 Switch 移植",
+      "instructions": "自备《荣誉勋章：联合袭击》原版数据，并按上游说明放置资源后从 Homebrew Menu 启动。",
+      "names": [
+        "openmohaa.nro"
+      ],
+      "extensions": [
+        ".nro"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
       }
     }
   ]
