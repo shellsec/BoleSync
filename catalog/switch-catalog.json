@@ -4752,6 +4752,30 @@
         "schema": 1,
         "mode": "download_only"
       }
+    },
+    {
+      "id": "sys-botbase-cpp",
+      "name": "sys-botbase-cpp",
+      "aliases": [
+        "sys-botbase",
+        "USB botbase",
+        "Pokemon Automation"
+      ],
+      "summary": "通过局域网或 USB 远程控制 Switch，支持游戏内存读写。",
+      "category": "AI与自动化",
+      "instructions": "仅下载官方 atmosphere.zip。按上游说明解压到 SD 卡根目录，重启 Atmosphère 后使用兼容客户端连接。",
+      "repo": "PokemonAutomation/sys-botbase-cpp",
+      "page": "https://github.com/PokemonAutomation/sys-botbase-cpp/releases",
+      "names": [
+        "atmosphere.zip"
+      ],
+      "extensions": [
+        ".zip"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only"
+      }
     }
   ]
 }
