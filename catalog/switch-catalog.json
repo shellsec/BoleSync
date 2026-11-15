@@ -4783,7 +4783,7 @@
       "category": "金手指 / Cheats",
       "display_shelf": "games",
       "summary": "Atmosphère 玩法及画质／帧率码合集。 / Combined gameplay and graphics/FPS codes for Atmosphère.",
-      "instructions": "解压后检查 contents/<Title ID>/cheats/<Build ID>.txt。备份同名自定义文件，再把所需文件复制到 sdmc:/atmosphere/ 下对应路径，匹配游戏及版本。 / Extract the ZIP and locate contents/<Title ID>/cheats/<Build ID>.txt. Back up matching custom files, then copy the files for your game and build under sdmc:/atmosphere/.",
+      "instructions": "下载后在 sdmc:/switch/bolesync-market/downloads/switch-cheats-db-complete/ 找到 contents_complete.zip。 / Find contents_complete.zip in sdmc:/switch/bolesync-market/downloads/switch-cheats-db-complete/.",
       "repo": "HamletDuFromage/switch-cheats-db",
       "page": "https://github.com/HamletDuFromage/switch-cheats-db/releases",
       "aliases": [
@@ -4799,6 +4799,11 @@
         "schema": 1,
         "mode": "download_only",
         "asset": "contents_complete.zip"
+      },
+      "tool_guide": {
+        "依赖与准备": "Switch 上打开 ezRemote Client，在本地文件浏览器选中 ZIP 解压；也可在电脑上右键选择「全部解压缩」。 / Use ezRemote Client on Switch to extract the local ZIP, or use Extract All on your PC.",
+        "启用入口": "先备份同名自定义码，再把解压得到的 contents 文件夹合并到 sdmc:/atmosphere/。最终路径为 sdmc:/atmosphere/contents/<Title ID>/cheats/<Build ID>.txt。 / Back up custom codes before merging the extracted contents folder into sdmc:/atmosphere/. Check the Title ID and Build ID in the final path.",
+        "停用与恢复": "重新启动游戏，用 EdiZon Overlay 查看或开关匹配当前版本的码。 / Restart the game and use EdiZon Overlay to view or toggle codes that match the current build."
       }
     }
   ]
