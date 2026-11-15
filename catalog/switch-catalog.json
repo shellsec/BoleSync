@@ -4652,7 +4652,7 @@
       "url": "https://downloads.scummvm.org/frs/scummvm/2026.4.0/scummvm-2026.4.0-switch.zip",
       "category": "游戏移植",
       "summary": "运行经典冒险游戏",
-      "instructions": "下载官方 Switch ZIP，按官方说明解包并导入自有游戏文件。",
+      "instructions": "下载官方 Switch ZIP，解压到 SD 卡。将自有游戏文件放在 sdmc:/switch/scummvm/ 下，从 Homebrew Menu 启动 ScummVM，选择 Add Game 并选中游戏目录。",
       "install": {
         "schema": 1,
         "mode": "download_only"
@@ -4763,7 +4763,7 @@
       ],
       "summary": "通过局域网或 USB 远程控制 Switch，支持游戏内存读写。",
       "category": "AI与自动化",
-      "instructions": "仅下载官方 atmosphere.zip。按上游说明解压到 SD 卡根目录，重启 Atmosphère 后使用兼容客户端连接。",
+      "instructions": "下载官方 atmosphere.zip，保留目录结构解压到 SD 卡根目录并重启 Atmosphère。需搭配兼容电脑端客户端，按上游说明通过局域网或 USB 连接。",
       "repo": "PokemonAutomation/sys-botbase-cpp",
       "page": "https://github.com/PokemonAutomation/sys-botbase-cpp/releases",
       "names": [
