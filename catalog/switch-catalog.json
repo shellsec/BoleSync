@@ -4776,6 +4776,30 @@
         "schema": 1,
         "mode": "download_only"
       }
+    },
+    {
+      "id": "switch-cheats-db-complete",
+      "name": "Switch 金手指库 · 合集 / Complete",
+      "category": "金手指 / Cheats",
+      "display_shelf": "games",
+      "summary": "Atmosphère 玩法及画质／帧率码合集。 / Combined gameplay and graphics/FPS codes for Atmosphère.",
+      "instructions": "解压后检查 contents/<Title ID>/cheats/<Build ID>.txt。备份同名自定义文件，再把所需文件复制到 sdmc:/atmosphere/ 下对应路径，匹配游戏及版本。 / Extract the ZIP and locate contents/<Title ID>/cheats/<Build ID>.txt. Back up matching custom files, then copy the files for your game and build under sdmc:/atmosphere/.",
+      "repo": "HamletDuFromage/switch-cheats-db",
+      "page": "https://github.com/HamletDuFromage/switch-cheats-db/releases",
+      "aliases": [
+        "AIO",
+        "金手指",
+        "Cheats",
+        "Atmosphère"
+      ],
+      "names": [
+        "contents_complete.zip"
+      ],
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "asset": "contents_complete.zip"
+      }
     }
   ]
 }
