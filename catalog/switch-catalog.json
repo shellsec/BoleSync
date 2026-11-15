@@ -4805,6 +4805,78 @@
         "启用入口": "先备份同名自定义码，再把解压得到的 contents 文件夹合并到 sdmc:/atmosphere/。最终路径为 sdmc:/atmosphere/contents/<Title ID>/cheats/<Build ID>.txt。 / Back up custom codes before merging the extracted contents folder into sdmc:/atmosphere/. Check the Title ID and Build ID in the final path.",
         "停用与恢复": "重新启动游戏，用 EdiZon Overlay 查看或开关匹配当前版本的码。 / Restart the game and use EdiZon Overlay to view or toggle codes that match the current build."
       }
+    },
+    {
+      "id": "switch-cheats-db-graphics",
+      "name": "Switch 金手指库 · 画质与帧率 / Graphics & FPS",
+      "repo": "HamletDuFromage/switch-cheats-db",
+      "page": "https://github.com/HamletDuFromage/switch-cheats-db/releases",
+      "category": "金手指 / Cheats",
+      "display_shelf": "games",
+      "summary": "NX-60FPS-RES-GFX-Cheats 的 Atmosphère 整包镜像。 / Full Atmosphère mirror of NX-60FPS-RES-GFX-Cheats.",
+      "instructions": "仅下载整个 contents_60fps-res-gfx.zip。已有合集时也包含这些画质码。 / Download the full graphics ZIP; the Complete bundle already includes these codes.",
+      "aliases": [
+        "金手指",
+        "Cheats",
+        "Atmosphère"
+      ],
+      "tool_guide": {
+        "依赖与准备": "需要 Atmosphère 和匹配游戏版本的 Title ID、Build ID。 / Requires Atmosphère and matching Title and Build IDs.",
+        "启用入口": "用 ezRemote Client 或电脑解压，将包内 contents 合并到 sdmc:/atmosphere/，覆盖前备份同名文件。 / Extract with ezRemote Client or a PC and merge contents into sdmc:/atmosphere/. Back up any matching files first."
+      },
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "asset": "contents_60fps-res-gfx.zip"
+      }
+    },
+    {
+      "id": "nxcheatcode",
+      "name": "NXCheatCode · Breeze / EdiZon SE",
+      "repo": "tomvita/NXCheatCode",
+      "page": "https://github.com/tomvita/NXCheatCode/releases",
+      "category": "金手指 / Cheats",
+      "display_shelf": "games",
+      "summary": "Breeze 和 EdiZon SE 使用的整包数据库。 / Full cheat database for Breeze and EdiZon SE.",
+      "instructions": "下载整个 titles.zip，保留 ZIP 格式。 / Download the entire titles.zip and keep it zipped.",
+      "aliases": [
+        "金手指",
+        "Cheats",
+        "Atmosphère"
+      ],
+      "tool_guide": {
+        "依赖与准备": "已安装 Breeze 或 EdiZon SE。已有旧数据库时先备份。 / Install Breeze or EdiZon SE and back up any existing database.",
+        "启用入口": "复制到 sdmc:/switch/breeze/cheats/titles.zip 或 sdmc:/switch/EdiZon/cheats/titles.zip，再在对应工具里查找当前游戏的码。 / Copy to either of the paths shown and open the matching app to find codes for your game."
+      },
+      "install": {
+        "schema": 1,
+        "mode": "download_only",
+        "asset": "titles.zip"
+      }
+    },
+    {
+      "id": "bad1dea-nxcheats",
+      "name": "NXCheats · bad1dea",
+      "repo": "bad1dea/NXCheats",
+      "page": "https://github.com/bad1dea/NXCheats",
+      "category": "金手指 / Cheats",
+      "display_shelf": "games",
+      "summary": "按游戏和版本组织的真机金手指及补丁。 / Hardware cheat files and patches organized by game and build.",
+      "instructions": "扫码打开官方仓库；可用 Code → Download ZIP 一次下载仓库。 / Scan to open the official repository. Use Code → Download ZIP for the full repository.",
+      "aliases": [
+        "金手指",
+        "Cheats",
+        "Atmosphère"
+      ],
+      "tool_guide": {
+        "依赖与准备": "按 Title ID 和 Build ID 选择对应游戏目录，查看该游戏说明。 / Pick the directory that matches your game Title ID and Build ID and read its notes.",
+        "启用入口": "把所选游戏目录里的 atmosphere 合并到 SD 卡根目录。需要双文件的版本同时安装 cheats 下的 .txt 和 exefs_patches 下的 .ips。 / Merge the chosen game folder’s atmosphere into the SD root. Two-file sets need both the cheat .txt and the ExeFS .ips patch.",
+        "停用与恢复": "覆盖前备份同名文件；停用时移除对应 .txt 和 .ips，恢复自己的备份。 / Back up matching files first. To remove the set, remove its .txt and .ips and restore your backup."
+      },
+      "install": {
+        "schema": 1,
+        "mode": "open_page"
+      }
     }
   ]
 }
